@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+const PORT = process.env.PORT || 5000
 // ======== SE DETERMINA MOTOR Y EXTENSION ====
 
 	app.set('view engine', 'ejs');
@@ -19,7 +19,7 @@ const app = express();
 
 // ======== DOY INICIO A SERVIDOR ====
 
-	app.listen(5000, ()=>{
+	app.listen(PORT, ()=>{
 		console.log('SERVER corriendo en http://localhost:5000');
 	   
 	})
