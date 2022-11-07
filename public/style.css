@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color:#FBFBFB ;
+}
+
+/*============ BARRA DE NAVEGACION =================*/
+
+	nav{
+		border: 1px solid #D5D6D0 ;
+		display: grid;
+		grid-template-columns: 1fr 2fr 5fr;
+		height: 60px;
+		background-color: #fff;
+	}
+	nav a{
+		text-decoration: none;
+		color: #625667;
+
+	}
+	nav span:hover{
+
+		color: #9FB2E1;
+
+	}
+	nav input{
+		position: relative;
+		padding: 12px;
+		margin-left: 17px;
+		background-color:#EEF0F0 ;
+		outline: none;
+		border: 0;
+		border-radius: 10px;
+		height: 35px;
+		width:259px;
+		font-size: 15px;
+		color:#262626;
+		font-family: sans-serif;
+	}
+	.socialRed img{
+		padding: 10px 23px;
+		width: 170px;
+		font-family: 'Smooch', cursive;
+	}
+	.search{
+		position: relative;
+		left: 22px;
+		margin-left: 30px;
+		margin: 12px;
+		height: 35px;
+
+			
+
+		border-radius: 10px;
+		background-color: #EEF0F0;
+	}
+	.search span{
+		position: absolute;
+		left: 8px;
+		top: 7px;
+		font-size: 22px;
+		color: #BBBBBB;
+	}
+	::placeholder{
+		position: relative;
+		top: 2px;
+		padding: 8px;
+		padding-top: 5px;
+		font-size: 15px;
+		color: #BBBBBB;
+
+	}
+	.link{
+		position: absolute;
+		right: 0;
+		padding: 15px 0;
+
+	}
+	.link span{
+		margin:0 8px;
+		font-size: 30px;
+
+	}
+	@media (max-width: 700px){
+
+			nav{
+				
+				display: grid;
+				grid-template-columns: 1fr 2fr 7fr;
+				
+			}
+				nav input{
+			
+				width:77%;
+			
+				
+			}
+			
+	}
+
+/*============ HISTORIAS DE USUARIOS ================*/
+
+	.history{
+		background-color: #fff;
+		margin: 15px;
+		border: 1px solid #D5D6D0 ;
+		border-radius: 10px;
+    }
+
+	/*============== TIPO DE LETRAS =====================*/
+			h1{
+				font-size: 20px;
+				font-family: 'Poppins', sans-serif;
+				color: #121212;
+			}
+			h3{
+				font-size: 17px;
+				font-family: 'Poppins', sans-serif;
+				color: #121212;
+			}
+			h2{
+				font-size: 15px;
+				font-family: 'Poppins', sans-serif;
+				color: #121212;
+
+			}
+			h4{
+				font-size: 13px;
+				font-family: 'Poppins', sans-serif;
+				color: #757070;
+			}
+
+			p{
+				font-size: 12px;
+				font-family: 'Poppins', sans-serif;
+				color: #121212;
+			}
+			span{
+				font-size: 17px;
+				margin:0 10px;
+				color: #757070;
+				font-family: 'Poppins', sans-serif;
+				color: #121212;
+				
+			}
+	/*=============== MODELADO DE MSJ ====================*/
+		
+		.flex{
+			display: flex;
+
+
+		}
+		.flex .perfil{
+			display: flex;
+			flex-direction: column;
+			align-items: center	;
+		}
+		.scroll{
+			padding: 5px;
+			overflow-x: hidden;
+			overflow-x: scroll;
+		}
+
+		.msj{
+
+			display: flex;
+		}
+		.perfil h3{
+
+			display: flex;
+			align-items: center;
+			padding: 15px;
+			
+		}
+		.history-content{
+			margin-left: 15px;
+
+		}
+		.perfil-buttom {
+			margin: 10px 0;
+		}
+		.perfil-buttom span{
+			font-size: 27px;
+			color: #3C3838;
+		}
+		.perfil-buttom span:hover{
+			color: #9FB2E1;
+		}
+		.perfil-buttom a{
+
+			text-decoration: none;
+
+		}
+		.history-content h1,h4,p,.msj{
+			margin: 10px 0;
+
+		}
+	/*=============== MODELADO DE IMG  ====================*/
+        .history{
+			width: 50%;
+			object-fit: cover;
+		}
+		.history img{
+			width: 100%;
+			object-fit: cover;
+		}
+		
+		@media(max-width: 800px){
+			.history{
+				width: 93%;
+		    }
+		}
+	/*=============== MODELADO DE PERFIL  ==================*/
+
+
+
+		.perfil{
+			margin: 10px 20px;
+			display: flex;
+			margin-bottom: 10px;
+
+		}
+		.perfil img{
+			width: 65px;
+			height: 65px;
+			border-radius: 50%;
+			object-fit: cover;
+			padding: 2px;
+
+		}
+		.perfil .img{
+			width: 71px;
+			height: 71px;
+			border: 3px solid #FB8E01;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+/*============ CREATE ================*/
+		.tituloCreate{
+			width: 90%;
+			background-color: #fff;
+			border: 1px solid #D5D6D0;
+			border-radius: 20px;
+			padding: 10px;
+			display: flex;
+			flex-direction: column	;
+			text-align: center	;
+			margin: 10px auto;
+
+		}
+		.tituloCreate h1{
+
+			font-family:;
+
+
+
+		}
+	   .create{
+			display: flex;
+			justify-content: center	;
+		}
+		form{
+			margin: 10px 0;
+			border: 1px solid #D5D6D0 ;
+			width: 	90%;
+			border-radius: 15px;
+			background-color: #fff;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+
+		}
+		.create form input[type='submit'],
+		.create form input[type='text']{
+			outline: none;
+	        margin: 10px 0;
+			border: 1px solid #D5D6D0 ;
+			width: 	100%;
+			border-radius: 15px;
+			background-color: #fff;
+		}
+	    .create form input[type='text']{
+			padding: 10px;
+			font-size: 	20px;
+			font-family:sans-serif;
+			
+
+		}
+		.create form input[type='submit']{
+			color:#53525A	;
+			padding: 5px;
+			font-size: 	20px;
+			font-family:poppins;
+			width: 	100px;
+		}
+		.create form input[type='submit']:hover{
+			background-color: #9FB2E1;
+			color: 	#fff;
+			
+		}
+		
